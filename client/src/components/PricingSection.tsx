@@ -104,13 +104,19 @@ const PricingSection = () => {
                   </motion.li>
                 ))}
               </ul>
-              <Button
-                variant={plan.popular ? "heroOutline" : "hero"}
-                className="w-full"
-                size="lg"
-              >
-                Get Started
-              </Button>
+      <a
+  href={`https://wa.me/917836909669?text=Hi%20I%20am%20interested%20in%20${plan.name}%20plan`}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button
+    variant={plan.popular ? "heroOutline" : "hero"}
+    className="w-full"
+    size="lg"
+  >
+    Get Started
+  </Button>
+</a>
             </motion.div>
           ))}
         </div>
